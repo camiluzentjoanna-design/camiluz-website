@@ -5,10 +5,6 @@ body, html {
     color: #28282B;
 }
 
-body.loaded {
-    opacity: 1;
-}
-
 /* Navigation */
 nav {
     display: flex;
