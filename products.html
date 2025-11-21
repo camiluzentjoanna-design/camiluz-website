@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Camiluz</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">
+            <img src="images/GDMlogo2.png" alt="Camiluz Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li class="has-dropdown">
+                <a href="products.html">Products ▾</a>
+                <ul class="dropdown">
+                    <li><a href="products.html?category=all" data-filter="all">All Products</a></li>
+                    <li><a href="products.html?category=slice" data-filter="slice">Slices</a></li>
+                    <li><a href="products.html?category=strips" data-filter="strips">Strips</a></li>
+                    <li><a href="products.html?category=chocolate" data-filter="chocolate">Chocolate Coated</a></li>
+                </ul>
+            </li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </nav>
+
+    <section class="content">
+        <h1>OUR TASTES OF JOY</h1>
+        <p>Explore our updated product catalog of your favorite mango snack from the Philippines!</p>
+
+        <!-- Category filter (select for mobile / quick filter) -->
+        <div class="filter-row">
+            <label for="category-select" class="sr-only">Filter products</label>
+            <select id="category-select">
+                <option value="all">All Products</option>
+                <option value="slice">Slices</option>
+                <option value="strips">Strips</option>
+                <option value="chocolate">Chocolate</option>
+            </select>
+        </div>
+
+        <div class="product-grid">
+            <div class="product-card" data-category="slice">
+                <img src="images/products/G200.png" alt="">
+                <h3>Dried Mango Slice 200g</h3>
+                <span class="subtext">G200 - ₱214.00</span>
+                <p>Made from real Philippine mangoes, great for sharing.</p>
+            </div>
+
+            <div class="product-card" data-category="slice">
+                <img src="images/products/G100.png" alt="">
+                <h3>Dried Mango Slice 100g</h3>
+                <span class="subtext">G100 - ₱110.00</span>
+                <p>Real taste of mango great for snacking on! 🥭</p>
+            </div>
+
+            <div class="product-card" data-category="strips">
+                <img src="images/products/GS100.png" alt="">
+                <h3>Dried Mango Strips 100g</h3>
+                <span class="subtext">GS100 - ₱108.00</span>
+                <p>Made from real mangoes with no flavorings and food coloring in perfectly rectangular shapes. 😌✨</p>
+            </div>
+
+            <div class="product-card" data-category="slice">
+                <img src="images/products/GP200.png" alt="">
+                <h3>Gift Pack Slice 200g</h3>
+                <span class="subtext">GP200 - ₱257.50</span>
+                <p>Great for pasalubong and gifts for your friends, 
+                    relatives and/or love ones! 💝</p>
+            </div>
+
+            <div class="product-card" data-category="strips">
+                <img src="images/products/SPAG240.png" alt="">
+                <h3>Spaghetti Strips 240g</h3>
+                <span class="subtext">SPAG240 - ₱270.00</span>
+                <p>Made from real mangoes and cut into long strips for a naturally fun and delicious snack!</p>
+            </div>
+
+            <div class="product-card" data-category="strips">
+                <img src="images/products/SPAG500.png" alt="">
+                <h3>Spaghetti Strips 500g</h3>
+                <span class="subtext">SPAG500 - ₱520.00</span>
+                <p>Made from real mangoes and cut into long strips for a naturally fun and delicious snack! Especially packed with more fun!</p>
+            </div>
+
+            <div class="product-card" data-category="chocolate,slice">
+                <img src="images/products/DSL.png" alt="">
+                <h3>Dark Chocolate Slice 120g</h3>
+                <span class="subtext">DSL - ₱365.00</span>
+                <p>12 pcs of slices coated in a rich, bittersweet blend of dark chocolate delight.</p>
+            </div>
+
+            <div class="product-card" data-category="chocolate,slice">
+                <img src="images/products/MSL.png" alt="">
+                <h3>Milk Chocolate Slice 120g</h3>
+                <span class="subtext">MSL - ₱365.00</span>
+                <p>12 pcs of slices coated in a creamy, sweet medley of milk chocolate bliss.</p>
+            </div>
+
+            <div class="product-card" data-category="chocolate,slice">
+                <img src="images/products/WSL.png" alt="">
+                <h3>White Chocolate Slice 120g</h3>
+                <span class="subtext">WSL - ₱365.00</span>
+                <p>12 pcs of slices coated with a milky, buttery combination of white chocolate indulgence.</p>
+            </div>
+
+            <div class="product-card" data-category="chocolate,strips">
+                <img src="images/products/EXDST.png" alt="">
+                <h3>Extra Dark Chocolate Strips 120g</h3>
+                <span class="subtext">EXDST - ₱420.00</span>
+                <p>12 pcs of strips coated in a rich, intense bite of extra dark chocolate.</p>
+            </div>
+
+            <div class="product-card" data-category="chocolate,strips">
+                <img src="images/products/DST.png" alt="">
+                <h3>Dark Chocolate Strips 120g</h3>
+                <span class="subtext">DST - ₱420.00</span>
+                <p>12 pcs of strips coated with rich, bittersweet dark chocolate experience.</p>
+            </div>
+
+            <div class="product-card" data-category="chocolate,strips">
+                <img src="images/products/MST.png" alt="">
+                <h3>Milk Chocolate Strips 120g</h3>
+                <span class="subtext">MST - ₱420.00</span>
+                <p>12 pcs of strips coated in creamy, sweet milk chocolate treat.</p>
+            </div>
+
+            <div class="product-card" data-category="chocolate,strips">
+                <img src="images/products/MINIBOX.png" alt="">
+                <h3>Minibox 60g</h3>
+                <span class="subtext">MINIBOX - ₱220.00</span>
+                <p>A minibox of 6 pieces assorted flavors - milk, dark, and 
+                    extra dark chocolate-coated dried mango strips.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3>Camiluz Enterprises, Inc.</h3>
+                <p>787 Dr Pablo U. Abella St, Cebu City, 6000 Cebu</p>
+                <p>camiluzenterprises@gmail.com</p>
+                <p>+639556222783</p>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><a href="mailto:camiluzenterprises@gmail.com">Email Us</a></li>
+                    <li><a href="tel:+639556222783">Viber Us</a></li>
+                    <li><a href="contact.html">Contact Form</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-social">
+                <a href="https://facebook.com/GuadalupeDriedMangoes" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://instagram.com/guadalupe_dried_mangoes" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Camiluz Enterprises, Inc. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- filter script -->
+    <script src="js/products.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>

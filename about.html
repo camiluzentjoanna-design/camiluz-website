@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Camiluz</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">
+            <img src="images/branding/GDMlogo2.png" alt="Camiluz Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li class="has-dropdown">
+                <a href="products.html">Products ▾</a>
+                <ul class="dropdown">
+                    <li><a href="products.html?category=all" data-filter="all">All Products</a></li>
+                    <li><a href="products.html?category=slice" data-filter="slice">Slices</a></li>
+                    <li><a href="products.html?category=strips" data-filter="strips">Strips</a></li>
+                    <li><a href="products.html?category=chocolate" data-filter="chocolate">Chocolate Coated</a></li>
+                </ul>
+            </li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </nav>
+
+    <section class="content">
+        <!-- Image above About Us -->
+        <div class="about-image-wrapper">
+            <img src="images/blog/meal1.png" alt="Camiluz Enterprises" class="about-image">
+        </div>
+        <h1>About Us</h1>
+        <p><strong>Camiluz Enterprises, Inc.</strong> is a top dried mango manufacturer 
+            in the Philippines since 1973. 
+            Our premium products use only the finest Philippine mangoes 
+            and are made using a traditional, decades-old process 
+            developed over the years by our founders. 
+            Our GUADALUPE brand is crafted from carefully-selected 
+            ripe mangoes, with no artificial coloring or flavoring. 
+            Our commitment to quality has made us one of the 
+            most trusted brands of dried mango products in the Philippines.</p>
+
+        <h2>Our Mission</h2>
+        <p>Our mission is to preserve the legacy of Philippine mangoes 
+            by producing exceptional dried mangoes in Cebu. 
+            We seek to share joy across generations through products 
+            rooted in culture, craftsmanship, and dedication to excellence.</p>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3>Camiluz Enterprises, Inc.</h3>
+                <p>787 Dr Pablo U. Abella St, Cebu City, 6000 Cebu</p>
+                <p>camiluzenterprises@gmail.com</p>
+                <p>+639556222783</p>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><a href="mailto:camiluzenterprises@gmail.com">Email Us</a></li>
+                    <li><a href="tel:+639556222783">Viber Us</a></li>
+                    <li><a href="contact.html">Contact Form</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-social">
+                <a href="https://facebook.com/GuadalupeDriedMangoes" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://instagram.com/guadalupe_dried_mangoes" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Camiluz Enterprises, Inc. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const aboutImage = document.querySelector('.about-image-wrapper');
+
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.scrollY;
+            const fadeStart = 0;       // scroll position where fade starts
+            const fadeEnd = 300;       // scroll position where fade ends
+            let opacity = 1 - (scrollTop - fadeStart) / (fadeEnd - fadeStart);
+            if (opacity < 0) opacity = 0;
+            if (opacity > 1) opacity = 1;
+            aboutImage.style.opacity = opacity;
+        });
+    </script>
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
