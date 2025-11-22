@@ -219,10 +219,10 @@ nav a {
 /* TEXT OVERLAY */
 .hero-text {
     position: absolute;
-    top: 75%;
-    left: 50%;
+    bottom: 10%;
+    left: 5%;
     transform: translate(-50%,-50%);
-    text-align: center;
+    text-align: left;
     z-index: 3;
     color: #fff;
     padding: 20px;
@@ -236,7 +236,6 @@ nav a {
     line-height: 1.2;
     text-shadow: 0 4px 12px rgba(0,0,0,0.5);
     white-space: pre-line; /* respects <br> in your HTML */
-    margin: 0 auto;         /* center */
     word-break: normal;     /* avoid breaking mid-word */
 }
 
