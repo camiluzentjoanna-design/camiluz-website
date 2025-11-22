@@ -221,7 +221,7 @@ nav a {
     position: absolute;
     bottom: 10%;
     left: 5%;
-    transform: translate(-50%,-50%);
+    transform: none;
     text-align: left;
     z-index: 3;
     color: #fff;
@@ -231,7 +231,7 @@ nav a {
 }
 
 .hero-text h1 {
-    font-size: 75px;
+    font-size: 90px;
     font-weight: 700;
     line-height: 1.2;
     text-shadow: 0 4px 12px rgba(0,0,0,0.5);
